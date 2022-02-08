@@ -6,7 +6,7 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   entry: {
-    webpack: "./app/javascript/webpack.js"
+    webpack: "./app/javascript/webpack.ts"
   },
   output: {
     filename: "[name].js",
@@ -24,6 +24,11 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.(js|jsx|ts|tsx|)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
       },
     ],
   },
