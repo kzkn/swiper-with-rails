@@ -1,11 +1,6 @@
 {
   "dependencies": {
-    "@rails/webpacker": "5.4.3",
-    "swiper": "^7",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "swiper": "^7"
   },
-  "devDependencies": {
-    "webpack-dev-server": "^3"
-  }
+  "devDependencies": {}
 }
