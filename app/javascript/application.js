@@ -1,3 +1,7 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
-import "controllers"
+import Swiper from 'swiper'
+/* import 'swiper/css' // NOTE: compile error */
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('webpack 5')
+  new Swiper('.swiper')
+})

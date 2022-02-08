@@ -2,6 +2,6 @@ import Swiper from 'swiper'
 /* import 'swiper/css' // NOTE: compile error */
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('hoge')
+  console.log('webpacker')
   new Swiper('.swiper')
 })

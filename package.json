@@ -1,6 +1,11 @@
 {
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
   "dependencies": {
-    "swiper": "^7"
+    "swiper": "^7",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   },
   "devDependencies": {}
 }
