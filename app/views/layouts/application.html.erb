@@ -6,8 +6,22 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= stylesheet_pack_tag 'webpacker', media: 'all' %>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <%= javascript_pack_tag 'webpacker' %>
   </head>
 
   <body>
